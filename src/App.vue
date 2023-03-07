@@ -3,6 +3,7 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <card-simple />
+    <card-person />
   </div>
 </template>
 
@@ -10,12 +11,14 @@
 // import HelloWorld from './components/HelloWorld.vue'
 // import HelloWorld from '@/components/HelloWorld.vue'; otra forma de importar
 
-import CardSimple from '@/components/CardSimple.vue'
+import CardSimple from '@/components/CardSimple'
+import CardPerson from '@/components/CardPerson'
 
 export default {
   name: 'App',
   components: {
-    CardSimple
+    CardSimple,
+    CardPerson
   }
 }
 </script>
