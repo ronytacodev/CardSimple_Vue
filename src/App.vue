@@ -4,6 +4,7 @@
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <card-simple />
     <card-person />
+    <card-person-sass />
   </div>
 </template>
 
@@ -13,12 +14,14 @@
 
 import CardSimple from '@/components/CardSimple'
 import CardPerson from '@/components/CardPerson'
+import CardPersonSass from '@/components/CardPersonSass'
 
 export default {
   name: 'App',
   components: {
     CardSimple,
-    CardPerson
+    CardPerson,
+    CardPersonSass
   }
 }
 </script>

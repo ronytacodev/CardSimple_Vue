@@ -2,7 +2,7 @@
     <div class="card-person">
         <img class="card-person__img" src="@/assets/goku.jpg">
 
-        <p class="card-person__name">Goku</p>
+        <p class="card-person__name">Goku solo con CSS</p>
 
         <span class="card-person__anime">Dragon Ball Z</span>
 
