@@ -5,6 +5,7 @@
     <card-simple />
     <card-person />
     <card-person-sass />
+    <card-portada />
   </div>
 </template>
 
@@ -15,13 +16,15 @@
 import CardSimple from '@/components/CardSimple'
 import CardPerson from '@/components/CardPerson'
 import CardPersonSass from '@/components/CardPersonSass'
+import CardPortada from '@/components/CardPortada'
 
 export default {
   name: 'App',
   components: {
     CardSimple,
     CardPerson,
-    CardPersonSass
+    CardPersonSass,
+    CardPortada
   }
 }
 </script>
