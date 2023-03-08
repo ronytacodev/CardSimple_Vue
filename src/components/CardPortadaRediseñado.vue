@@ -3,9 +3,8 @@
         <img class="card-portada__img" src="@/assets/bg_night.jpg">
 
         <div class="card-portada__content">
-            <img class="card-portada__content__img" src="@/assets/goku.jpg">
 
-            <p class="card-portada__content__name">Goku</p>
+            <v-card-image-name />
 
             <div class="card-portada__content__report">
                 <div class="card-portada__content__report__items">
@@ -23,7 +22,7 @@
             </div>
 
             <div class="card-portada__content__controls">
-                <button class="card-portada__content__controls__btn celeste">Conectar</button>
+                <v-button-primary />
                 <button class="card-portada__content__controls__btn">Ver más</button>
             </div>
         </div>
@@ -31,8 +30,16 @@
 </template>
 
 <script>
+
+import VCardImageName from '@/components/template/VCardImageName'
+import VButtonPrimary from '@/components/template/VButtonPrimary'
+
 export default {
-    name: 'CardPortada'
+    name: 'CardPortadaRediseñado',
+    components: {
+        VCardImageName,
+        VButtonPrimary
+    }
 }
 </script>
 
@@ -44,7 +51,6 @@ export default {
     position: relative;
     display: flex;
     justify-content: center;
-    margin-bottom: 2em;
 
     &__img {
         width: 100%;
@@ -61,17 +67,6 @@ export default {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-        &__img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-        }
-
-        &__name {
-            color: white;
-            font-weight: bold;
-        }
 
         &__report {
             border-top: 3px solid white;
@@ -104,10 +99,6 @@ export default {
                 margin: 5px;
                 border: none;
                 border-radius: 1em;
-
-                &.celeste {
-                    background-color: #2980b9;
-                }
             }
         }
     }
