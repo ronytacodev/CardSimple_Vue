@@ -1,6 +1,6 @@
 # CARD, BANNER BASIC WITH VUE 2
 
-Code to create a simple card and a banner with Vue 2, VueCli.
+Code to create a simple card and a banner with Vue 2, VueCli and SASS.
 
 ## Screenshot
 ___
